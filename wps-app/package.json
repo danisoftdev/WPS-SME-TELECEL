@@ -1,5 +1,6 @@
 {
     "private": true,
+    "author": "danysoftdev (https://danysoftdev.com)",
     "type": "module",
     "scripts": {
         "build": "vite build",

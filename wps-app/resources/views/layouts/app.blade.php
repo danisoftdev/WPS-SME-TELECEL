@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="author" content="danysoftdev">
+    <meta name="developer" content="danysoftdev — https://danysoftdev.com">
 @php
     $__defaultOg = \App\Support\Branding::appLogoUrl();
     $__seoTitle = $seoTitle ?? (isset($title) && trim((string) $title) !== '' ? trim($title).' | WPS-SME' : 'WPS-SME');
@@ -672,6 +674,15 @@
         @endif
         @yield('content')
     </main>
+
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 pb-8 pt-2 border-t border-slate-200/80 mt-8" role="contentinfo">
+        <p class="text-center text-xs text-slate-500">
+            Developer:
+            <a href="https://danysoftdev.com" target="_blank" rel="noopener noreferrer" class="link-sea font-medium">danysoftdev</a>
+            <span class="text-slate-400">·</span>
+            <a href="https://danysoftdev.com" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-[var(--sea-dark)]">danysoftdev.com</a>
+        </p>
+    </footer>
 
     <!-- App confirm modal (replaces browser confirm()) -->
     <div id="app-confirm-backdrop" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50"></div>
